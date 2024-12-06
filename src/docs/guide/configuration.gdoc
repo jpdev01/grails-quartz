@@ -55,7 +55,7 @@ static description = "Example Job Description"
 
 h4. Clustering
 
-Quartz plugin doesn't support clustering out-of-the-box now. However, you could use standard Quartz clustering configuration. Take a look at the [example provided by Burt Beckwith|http://docs.codehaus.org/download/attachments/78053/clustering_sample.tar.gz?version=1]. You'll also need to set jdbcStore configuration option to true .
+Quartz plugin doesn't support clustering out-of-the-box now. However, you could use standard Quartz clustering configuration. Take a look at the [example provided by Burt Beckwith|http://docs.apache.org/download/attachments/78053/clustering_sample.tar.gz?version=1]. You'll also need to set jdbcStore configuration option to true .
 
 There are also two parameters for configuring store/clustering on jobs ( volatility and durability , both are true by default) and one for triggers ( volatility , also true by default). Volatile job and trigger will not persist between Quartz runs, and durable job will live even when there is no triggers referring to it.
 
