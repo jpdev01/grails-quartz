@@ -116,12 +116,11 @@ The triggers name property must be unique across all triggers in the application
                  | | `&#45; Hour, 0&#45;23
                  | `&#45; Minute, 0&#45;59
                  `&#45; Second, 0&#45;59</pre></div><p class="paragraph"/><blockquote class="note">
-<ul class="star">
-<li>Year is the only optional field and may be omitted, the rest are mandatory</li>
-<li>Day-of-Week and Month are case insensitive, so "DEC" = "dec" = "Dec"</li>
-<li>Either Day-of-Week or Day-of-Month must be "?", or you will get an error since support by the underlying library is not complete. So you can't specify both fields, nor leave both as the all values wildcard "*"; this is a departure from the unix crontab specification.</li>
-<li>See the CronTrigger Tutorial for an explanation of all the special characters you may use.</li>
-</ul><p class="paragraph"/></blockquote>
+* Year is the only optional field and may be omitted, the rest are mandatory
+* Day-of-Week and Month are case insensitive, so "DEC" = "dec" = "Dec"
+<strong class="bold"> Either Day-of-Week or Day-of-Month must be "?", or you will get an error since support by the underlying library is not complete. So you can't specify both fields, nor leave both as the all values wildcard "</strong>"; this is a departure from the unix crontab specification.
+* See the CronTrigger Tutorial for an explanation of all the special characters you may use.
+</blockquote>
 
 
 
